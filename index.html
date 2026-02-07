@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>by aren maaf jelek 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeInDown 2s;
+        }
+
+        p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: auto;
+            animation: fadeIn 4s;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.6);
+            animation: zoomIn 3s;
+        }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        .heart {
+            position: fixed;
+            top: -10px;
+            color: pink;
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fadeInDown {
+            from {opacity: 0; transform: translateY(-50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes zoomIn {
+            from {transform: scale(0);}
+            to {transform: scale(1);}
+        }
+
+        @keyframes fall {
+            to {transform: translateY(100vh);}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎂 Selamat Ulang Tahun Azantiy Cantik 🎂</h1>
+
+    <img src="az1.jpeg" alt="Foto Cantik">
+    <img src="az2.jpeg" alt="foto bu guru">
+    <img src="az3.jpeg" alt="foto azanty">
+
+    <p>
+        Selamat ulang tahun untuk kamu yang selalu membawa senyum,
+        kehangatan, dan kebahagiaan.  
+        Semoga hari ini penuh cinta, tawa, dan harapan baru.  
+        Tetaplah menjadi dirimu yang cantik, baik luar maupun dalam 💖💖 
+    </p>
+
+    <video controls autoplay muted>
+        <source src="videohbd.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <br>
+
+    <audio controls autoplay loop>
+        <source src="heyp.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+
+    <script>
+        // Animasi hati jatuh
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }, 300);
+    </script>
+
+</body>
+</html>
